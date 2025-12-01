@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sohaib Ahmed - Senior Android Engineer - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', 'Helvetica', sans-serif;
+            font-size: 11pt;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+            padding: 20px;
+        }
+
+        .resume-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #fff;
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #1e3a8a;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 28pt;
+            font-weight: bold;
+            color: #1e3a8a;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+
+        .header h2 {
+            font-size: 14pt;
+            color: #3b82f6;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 10pt;
+            color: #555;
+        }
+
+        .contact-info span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+            page-break-inside: avoid;
+        }
+
+        .section-title {
+            font-size: 14pt;
+            font-weight: bold;
+            color: #1e3a8a;
+            border-bottom: 2px solid #3b82f6;
+            padding-bottom: 5px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .summary {
+            text-align: justify;
+            font-size: 11pt;
+            line-height: 1.7;
+            color: #444;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .skill-category {
+            margin-bottom: 12px;
+        }
+
+        .skill-category h4 {
+            font-size: 11pt;
+            font-weight: bold;
+            color: #1e3a8a;
+            margin-bottom: 5px;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .skill-tag {
+            background: #f0f4ff;
+            color: #1e3a8a;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 9.5pt;
+            border: 1px solid #cbd5e1;
+        }
+
+        .experience-item {
+            margin-bottom: 18px;
+            page-break-inside: avoid;
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 8px;
+        }
+
+        .experience-header h3 {
+            font-size: 12pt;
+            font-weight: bold;
+            color: #1e3a8a;
+        }
+
+        .experience-header .date {
+            font-size: 10pt;
+            color: #666;
+            font-style: italic;
+        }
+
+        .company {
+            font-size: 11pt;
+            color: #3b82f6;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .achievements {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .achievements li {
+            margin-bottom: 6px;
+            padding-left: 20px;
+            position: relative;
+            font-size: 10.5pt;
+            line-height: 1.5;
+            color: #444;
+        }
+
+        .achievements li:before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #3b82f6;
+            font-weight: bold;
+        }
+
+        .project-item {
+            margin-bottom: 18px;
+            page-break-inside: avoid;
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 6px;
+        }
+
+        .project-header h3 {
+            font-size: 12pt;
+            font-weight: bold;
+            color: #1e3a8a;
+        }
+
+        .project-tag {
+            font-size: 9.5pt;
+            color: #666;
+            font-style: italic;
+        }
+
+        .project-description {
+            font-size: 10.5pt;
+            color: #555;
+            margin-bottom: 8px;
+            font-style: italic;
+        }
+
+        .project-highlights {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .project-highlights li {
+            margin-bottom: 5px;
+            padding-left: 20px;
+            position: relative;
+            font-size: 10pt;
+            line-height: 1.4;
+            color: #444;
+        }
+
+        .project-highlights li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #3b82f6;
+            font-weight: bold;
+        }
+
+        .tech-stack {
+            margin-top: 8px;
+            font-size: 9pt;
+            color: #666;
+        }
+
+        .tech-stack strong {
+            color: #1e3a8a;
+        }
+
+        .education-item,
+        .cert-item {
+            margin-bottom: 12px;
+        }
+
+        .education-item h4,
+        .cert-item h4 {
+            font-size: 11pt;
+            font-weight: bold;
+            color: #1e3a8a;
+            margin-bottom: 3px;
+        }
+
+        .education-item p,
+        .cert-item p {
+            font-size: 10pt;
+            color: #666;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+            }
+
+            .resume-container {
+                max-width: 100%;
+            }
+
+            .section {
+                page-break-inside: avoid;
+            }
+
+            .experience-item,
+            .project-item {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<div class="resume-container">
+
+    <!-- Header -->
+    <div class="header">
+        <h1>SOHAIB AHMED</h1>
+        <h2>Senior Android Engineer | Technical Lead</h2>
+        <div class="contact-info">
+            <span>📧 sohaibmughal93@gmail.com</span>
+            <span>📱 +923206313745</span>
+            <span>💼 linkedin.com/in/epegasus</span>
+            <span>💻 github.com/epegasus</span>
+            <span>📍 Islamabad, Pakistan</span>
+        </div>
+    </div>
+
+    <!-- Professional Summary -->
+    <div class="section">
+        <h2 class="section-title">Professional Summary</h2>
+        <div class="summary">
+            <p>
+                Senior Android Engineer and Technical Lead with 5+ years of experience delivering modern, scalable, and
+                high-performance Android applications. Specializes in Clean Architecture, MVI, MVVM, modularization, DI with Koin,
+                and Material 3 design principles. Leads a team of 20+ developers, driving engineering standards, resolving
+                technical challenges, and conducting weekly knowledge-sharing sessions. Passionate about building maintainable
+                codebases, optimizing performance across all API levels (Android 6-16), and delivering seamless user experiences
+                across complex enterprise products.
+            </p>
+        </div>
+    </div>
+
+    <!-- Technical Skills -->
+    <div class="section">
+        <h2 class="section-title">Technical Skills</h2>
+
+        <div class="skills-grid">
+
+            <div class="skill-category">
+                <h4>Android Development</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag">Kotlin</span>
+                    <span class="skill-tag">Coroutines</span>
+                    <span class="skill-tag">Flow</span>
+                    <span class="skill-tag">Jetpack</span>
+                    <span class="skill-tag">Room</span>
+                    <span class="skill-tag">Navigation</span>
+                    <span class="skill-tag">WorkManager</span>
+                    <span class="skill-tag">ViewModel</span>
+                    <span class="skill-tag">LiveData</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h4>Architectures</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag">Clean Architecture</span>
+                    <span class="skill-tag">MVI</span>
+                    <span class="skill-tag">MVVM</span>
+                    <span class="skill-tag">MVC</span>
+                    <span class="skill-tag">Modularization</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h4>UI / UX</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag">Material 3</span>
+                    <span class="skill-tag">XML Layouts</span>
+                    <span class="skill-tag">Jetpack Compose</span>
+                    <span class="skill-tag">Animations</span>
+                    <span class="skill-tag">Custom / Component Views</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h4>Dependency Injection</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag">Koin</span>
+                    <span class="skill-tag">Hilt</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h4>Tools & Technologies</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">Firebase</span>
+                    <span class="skill-tag">Crashlytics</span>
+                    <span class="skill-tag">DataStore</span>
+                    <span class="skill-tag">Retrofit</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h4>Leadership</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag">Team Management</span>
+                    <span class="skill-tag">Mentoring</span>
+                    <span class="skill-tag">Code Reviews</span>
+                    <span class="skill-tag">Technical Training</span>
+                    <span class="skill-tag">Team Growth</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Professional Experience -->
+    <div class="section">
+        <h2 class="section-title">Professional Experience</h2>
+
+        <div class="experience-item">
+            <div class="experience-header">
+                <h3>Technical Lead (Android)</h3>
+                <span class="date">Mar 2022 - Present</span>
+            </div>
+            <div class="company">HyperSoft Inc. | Islamabad, Pakistan</div>
+            <ul class="achievements">
+                <li>Leading end-to-end Android development for multiple large-scale applications across diverse domains.</li>
+                <li>Architected modular, scalable MVI/MVVM-based and Clean Architecture codebases improving maintainability and development speed.</li>
+                <li>Supervised code reviews, release cycles, and Play Store delivery with a strong focus on quality.</li>
+                <li>Mentored junior and mid-level developers, elevating team proficiency and code quality standards.</li>
+                <li>Delivered high-performance applications with improved crash-free metrics and optimized app startup times.</li>
+                <li>Collaborated with product, backend, QA, and design teams to ensure seamless feature delivery.</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="experience-header">
+                <h3>Android Developer</h3>
+                <span class="date">Apr 2021 - Feb 2022</span>
+            </div>
+            <div class="company">Al-Hassan IT Solutions</div>
+            <ul class="achievements">
+                <li>Developed multiple Android applications using Jetpack libraries, Kotlin, XML layouts, and Material Design components.</li>
+                <li>Integrated REST APIs, Firebase services, and push notifications to enhance app functionality.</li>
+                <li>Improved UI/UX consistency through design-polishing, layout optimization, and reusable components.</li>
+                <li>Enhanced app stability and startup performance through profiling, debugging, and code refactoring.</li>
+                <li>Contributed to the full SDLC, from feature planning to Play Store deployment.</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="experience-header">
+                <h3>Jr. Android Developer</h3>
+                <span class="date">Sept 2020 - Mar 2021</span>
+            </div>
+            <div class="company">TechnoSofts</div>
+            <ul class="achievements">
+                <li>Worked on Android application modules using Kotlin, XML, and Jetpack components.</li>
+                <li>Assisted in integration, testing, debugging, and delivering production-level features.</li>
+                <li>Collaborated in an Agile environment to meet sprint goals and improve product quality.</li>
+                <li>Supported senior engineers in optimizing performance and resolving app crashes.</li>
+            </ul>
+        </div>
+
+    </div>
+
+
+    <!-- Key Projects -->
+    <div class="section">
+        <h2 class="section-title">Key Projects</h2>
+
+        <div class="project-item">
+            <div class="project-header">
+                <h3>
+                    Photo Touch Editor
+                    <a href="https://play.google.com/store/apps/details?id=photocollage.photoeditor.layout.collagemaker.photo.grid" target="_blank" style="font-size: 9pt;  margin-left: 6px; font-style: italic;">(PlayStore Link)</a>
+                    <span style="font-size: 10pt; color: #3b82f6; font-weight: 600; margin-left: 10px;">10M+</span>
+                </h3>
+                <span class="project-tag">Photo Editing App | Play Store</span>
+
+            </div>
+            <div class="project-description">
+                A lightweight photo editor with collage layouts and image enhancement tools.
+            </div>
+            <ul class="project-highlights">
+                <li>Designed intuitive editing UI and optimized image processing for low-end devices.</li>
+                <li>Ensured smooth performance and compatibility across Android 6–16.</li>
+            </ul>
+            <div class="tech-stack">
+                <strong>Tech Stack:</strong> Kotlin, Android SDK, Custom Views
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-header">
+                <h3>
+                    All Languages Translator
+                    <a href="https://play.google.com/store/apps/details?id=com.mobiletranstorapps.all.languages.translator.free.voice.translation" target="_blank" style="font-size: 9pt;  margin-left: 6px; font-style: italic;">(PlayStore Link)</a>
+                    <span style="font-size: 10pt; color: #3b82f6; font-weight: 600; margin-left: 10px;">50M+</span>
+                </h3>
+                <span class="project-tag">Translation App | Play Store</span>
+            </div>
+            <div class="project-description">
+                Multi-language text & voice translator used by a global audience.
+            </div>
+            <ul class="project-highlights">
+                <li>Built clean UI for voice input, text translation, and multi-language support.</li>
+                <li>Improved performance and stability across multiple devices.</li>
+            </ul>
+            <div class="tech-stack">
+                <strong>Tech Stack:</strong> Kotlin, REST APIs, Android SDK
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-header">
+                <h3>
+                    Video Downloader HD
+                    <a href="https://play.google.com/store/apps/details?id=com.allvideodownloader.hdvideodownloader.savevideos" target="_blank" style="font-size: 9pt;  margin-left: 6px; font-style: italic;">(PlayStore Link)</a>
+                    <span style="font-size: 10pt; color: #3b82f6; font-weight: 600; margin-left: 10px;">5M+</span>
+                </h3>
+                <span class="project-tag">Utility App | Play Store</span>
+            </div>
+            <div class="project-description">
+                A tool for downloading and saving videos locally.
+            </div>
+            <ul class="project-highlights">
+                <li>Implemented background downloads with optimized file handling.</li>
+                <li>Improved reliability with robust error handling and storage management.</li>
+            </ul>
+            <div class="tech-stack">
+                <strong>Tech Stack:</strong> Kotlin, Networking, File I/O
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-header">
+                <h3>
+                    Universal TV Remote
+                    <a href="https://play.google.com/store/apps/details?id=com.universal.tv.remote.control.cast" target="_blank" style="font-size: 9pt;  margin-left: 6px; font-style: italic;">(PlayStore Link)</a>
+                    <span style="font-size: 10pt; color: #3b82f6; font-weight: 600; margin-left: 10px;">100K+</span>
+                </h3>
+                <span class="project-tag">Remote Control App | Play Store</span>
+            </div>
+            <div class="project-description">
+                Universal TV remote supporting smart TVs and casting features.
+            </div>
+            <ul class="project-highlights">
+                <li>Designed simple remote UI with device pairing & discovery flows.</li>
+                <li>Ensured fast response and compatibility across device types.</li>
+            </ul>
+            <div class="tech-stack">
+                <strong>Tech Stack:</strong> Kotlin, Android SDK, Device Communication
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-header">
+                <h3>
+                    Media/File Recovery App
+                    <a href="https://play.google.com/store/apps/details?id=com.mediarecover.deleted.messages.messagerecovery.app" target="_blank" style="font-size: 9pt;  margin-left: 6px; font-style: italic;">(PlayStore Link)</a>
+                    <span style="font-size: 10pt; color: #3b82f6; font-weight: 600; margin-left: 10px;">100K+</span>
+                </h3>
+                <span class="project-tag">Recovery Utility | Play Store</span>
+            </div>
+            <div class="project-description">
+                Utility for recovering deleted photos, videos, and messages on Android devices.
+            </div>
+            <ul class="project-highlights">
+                <li>Implemented file scanning & recovery logic for media directories.</li>
+                <li>Built lightweight UI for non-technical users.</li>
+            </ul>
+            <div class="tech-stack">
+                <strong>Tech Stack:</strong> Kotlin, File I/O, Permissions
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Education -->
+    <div class="section">
+        <h2 class="section-title">Education</h2>
+        <div class="education-item">
+            <h4>Bachelor's Degree in Computer Science</h4>
+            <p>University of Gujrat, Pakistan</p>
+        </div>
+    </div>
+
+    <!-- Certifications -->
+    <div class="section">
+        <h2 class="section-title">Certifications</h2>
+        <div class="cert-item">
+            <h4>Android Development</h4>
+            <p>Google / Udemy / Coursera (Various Tracks)</p>
+        </div>
+        <div class="cert-item">
+            <h4>Kotlin Essentials</h4>
+            <p>JetBrains Academy</p>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
