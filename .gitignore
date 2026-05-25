@@ -1,2 +1,4 @@
-# Default ignored files
-.idea
+.idea/
+.DS_Store
+Thumbs.db
+*.log
