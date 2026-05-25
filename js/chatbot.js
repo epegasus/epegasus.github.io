@@ -52,7 +52,7 @@
     },
     {
       keys: ['github', 'open source', 'repo', 'project code'],
-      reply: 'Open source on GitHub (@epegasus): AI Art Generator, KleanBot AI Chat, Language Translator, Google Play In-App Reviews, Per-App Language Change, Media Images with Flow, and more.'
+      reply: 'GitHub (@epegasus): android-libraries, android-architectures, android-samples, Pegasus-Utils (★5), AnimeHub, compose-catalog-material-3, inappbilling, and more at github.com/epegasus.'
     },
     {
       keys: ['job', 'role', 'title', 'position'],

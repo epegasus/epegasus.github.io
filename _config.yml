@@ -1,4 +1,6 @@
-theme: jekyll-theme-minimal
+# Static portfolio — no Jekyll theme (see .nojekyll)
 title: Sohaib Ahmed | Senior Android Engineer
-description: Technical Lead · 75M+ installs · Kotlin · Jetpack Compose · Clean Architecture
+description: Technical Lead · Kotlin · Jetpack Compose · 75M+ installs
 url: https://epegasus.github.io
+exclude:
+  - README.md

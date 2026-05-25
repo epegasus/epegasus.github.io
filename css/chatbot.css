@@ -102,8 +102,13 @@
   overflow: hidden;
 }
 
+.chatbot-window[hidden] {
+  display: none !important;
+}
+
 .chatbot-window.active,
 .chatbot-window.open {
+  display: flex;
   opacity: 1;
   transform: translateY(0) scale(1);
   pointer-events: all;

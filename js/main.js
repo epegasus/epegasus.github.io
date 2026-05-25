@@ -5,6 +5,9 @@
 (function () {
   'use strict';
 
+  document.documentElement.classList.remove('no-js');
+  document.documentElement.classList.add('js-ready');
+
   const navbar = document.getElementById('navbar');
   const navToggle = document.getElementById('navToggle');
   const navMenu = document.getElementById('navMenu');
@@ -91,21 +94,25 @@
   );
   document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
 
-  // Animated stat counters
+  // Animated stat counters (fallback text already in HTML)
   function animateCounter(el) {
     const target = parseFloat(el.dataset.count);
     const suffix = el.dataset.suffix || '';
     const decimals = parseInt(el.dataset.decimals || '0', 10);
-    const duration = prefersReducedMotion ? 0 : 1800;
+    const finalText = target.toFixed(decimals) + suffix;
+    if (prefersReducedMotion) {
+      el.textContent = finalText;
+      return;
+    }
+    const duration = 1400;
     const start = performance.now();
 
     function tick(now) {
-      const progress = duration === 0 ? 1 : Math.min((now - start) / duration, 1);
+      const progress = Math.min((now - start) / duration, 1);
       const eased = 1 - Math.pow(1 - progress, 3);
-      const value = target * eased;
-      el.textContent = value.toFixed(decimals) + suffix;
+      el.textContent = (target * eased).toFixed(decimals) + suffix;
       if (progress < 1) requestAnimationFrame(tick);
-      else el.textContent = target.toFixed(decimals) + suffix;
+      else el.textContent = finalText;
     }
     requestAnimationFrame(tick);
   }

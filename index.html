@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 
 <head>
     <meta charset="utf-8">
@@ -26,8 +26,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/chatbot.css">
+    <link rel="stylesheet" href="css/style.css?v=3">
+    <link rel="stylesheet" href="css/chatbot.css?v=3">
 
     <script type="application/ld+json">
     {
@@ -75,10 +75,10 @@
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#experience" class="nav-link">Work</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Products</a></li>
-                <li><a href="#opensource" class="nav-link">Open Source</a></li>
+                <li><a href="#projects" class="nav-link">Apps</a></li>
+                <li><a href="#opensource" class="nav-link">GitHub</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
                 <li><a href="resume.html" class="nav-link nav-resume">Resume</a></li>
             </ul>
@@ -111,19 +111,19 @@
             </div>
             <div class="container stats-bar reveal">
                 <div class="stat-item">
-                    <span class="stat-value" data-count="75" data-suffix="M+">0</span>
+                    <span class="stat-value" data-count="75" data-suffix="M+">75M+</span>
                     <span class="stat-label">Cumulative installs</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-value" data-count="10" data-suffix="+">0</span>
+                    <span class="stat-value" data-count="10" data-suffix="+">10+</span>
                     <span class="stat-label">Play Store apps shipped</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-value" data-count="20" data-suffix="+">0</span>
+                    <span class="stat-value" data-count="20" data-suffix="+">20+</span>
                     <span class="stat-label">Engineers led & mentored</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-value" data-count="99.99" data-suffix="%" data-decimals="2">0</span>
+                    <span class="stat-value" data-count="99.99" data-suffix="%" data-decimals="2">99.99%</span>
                     <span class="stat-label">Crash-free on major apps</span>
                 </div>
             </div>
@@ -398,36 +398,69 @@
         <section id="opensource" class="section">
             <div class="container">
                 <header class="section-header reveal">
-                    <span class="section-tag">Open Source</span>
-                    <h2 class="section-title">GitHub highlights</h2>
-                    <p class="section-subtitle"><a href="https://github.com/epegasus" target="_blank" rel="noopener noreferrer">github.com/epegasus</a></p>
+                    <span class="section-tag">GitHub</span>
+                    <h2 class="section-title">Open source &amp; engineering repos</h2>
+                    <p class="section-subtitle">Shared modules, architecture samples, and Android tooling — <a href="https://github.com/epegasus" target="_blank" rel="noopener noreferrer">@epegasus</a></p>
                 </header>
-                <div class="repo-grid">
-                    <a href="https://github.com/epegasus/AI-Art-Generator" class="repo-card reveal" target="_blank" rel="noopener noreferrer">
-                        <h3>AI Art Generator</h3>
-                        <p>Stable Diffusion API · Clean Architecture · Retrofit · Flow states · Glide</p>
+                <div class="github-stats reveal">
+                    <div class="github-stat"><strong>9+</strong><span>public repositories</span></div>
+                    <div class="github-stat"><strong>Kotlin</strong><span>primary language</span></div>
+                    <div class="github-stat"><strong>2026</strong><span>actively maintained</span></div>
+                </div>
+                <div class="repo-grid" id="repoGrid">
+                    <a href="https://github.com/epegasus/android-libraries" class="repo-card reveal" target="_blank" rel="noopener noreferrer">
+                        <div class="repo-card-head">
+                            <h3>android-libraries</h3>
+                            <span class="repo-lang">Java</span>
+                        </div>
+                        <p>Reusable Android libraries and modules used across HyperSoft projects — ads, billing, utilities, and shared UI.</p>
                     </a>
-                    <a href="https://github.com/epegasus/KleanBot-AI-Chat" class="repo-card reveal" target="_blank" rel="noopener noreferrer">
-                        <h3>KleanBot AI Chat</h3>
-                        <p>OpenAI · MVVM · Clean Architecture · Kotlin</p>
+                    <a href="https://github.com/epegasus/android-architectures" class="repo-card reveal" target="_blank" rel="noopener noreferrer">
+                        <div class="repo-card-head">
+                            <h3>android-architectures</h3>
+                            <span class="repo-lang">Kotlin</span>
+                        </div>
+                        <p>Reference implementations of MVC, MVVM, and MVI with Clean Architecture patterns for team onboarding.</p>
                     </a>
-                    <a href="https://github.com/epegasus/LanguageTranslator" class="repo-card reveal" target="_blank" rel="noopener noreferrer">
-                        <h3>Language Translator</h3>
-                        <p>50+ languages translation sample</p>
+                    <a href="https://github.com/epegasus/android-samples" class="repo-card reveal" target="_blank" rel="noopener noreferrer">
+                        <div class="repo-card-head">
+                            <h3>android-samples</h3>
+                            <span class="repo-lang">Kotlin</span>
+                        </div>
+                        <p>Production-style Android samples — Jetpack, Compose, networking, and integration patterns for internal teams.</p>
                     </a>
-                    <a href="https://github.com/epegasus/Google-Play-In-App-Reviews" class="repo-card reveal" target="_blank" rel="noopener noreferrer">
-                        <h3>Play In-App Reviews</h3>
-                        <p>In-app review API integration patterns</p>
+                    <a href="https://github.com/epegasus/Pegasus-Utils" class="repo-card reveal" target="_blank" rel="noopener noreferrer">
+                        <div class="repo-card-head">
+                            <h3>Pegasus-Utils</h3>
+                            <span class="repo-lang">Kotlin · ★ 5</span>
+                        </div>
+                        <p>Android utility library: navigation, Firebase helpers, bitmap/file utils, splash screen, and coroutine extensions.</p>
                     </a>
-                    <a href="https://github.com/epegasus/Per-App-Language-Change" class="repo-card reveal" target="_blank" rel="noopener noreferrer">
-                        <h3>Per-App Language</h3>
-                        <p>Android per-app locale APIs</p>
+                    <a href="https://github.com/epegasus/AnimeHub" class="repo-card reveal" target="_blank" rel="noopener noreferrer">
+                        <div class="repo-card-head">
+                            <h3>AnimeHub</h3>
+                            <span class="repo-lang">Kotlin</span>
+                        </div>
+                        <p>Modern Android app with cloud sync, notifications, analytics, and offline support — MIT licensed.</p>
                     </a>
-                    <a href="https://github.com/epegasus/Media-Images-with-Flow" class="repo-card reveal" target="_blank" rel="noopener noreferrer">
-                        <h3>Media Images with Flow</h3>
-                        <p>StateFlow media gallery performance patterns</p>
+                    <a href="https://github.com/epegasus/compose-catalog-material-3" class="repo-card reveal" target="_blank" rel="noopener noreferrer">
+                        <div class="repo-card-head">
+                            <h3>compose-catalog-material-3</h3>
+                            <span class="repo-lang">Kotlin</span>
+                        </div>
+                        <p>Jetpack Compose + Material 3 component catalog for consistent UI across apps.</p>
+                    </a>
+                    <a href="https://github.com/epegasus/inappbilling" class="repo-card reveal" target="_blank" rel="noopener noreferrer">
+                        <div class="repo-card-head">
+                            <h3>inappbilling</h3>
+                            <span class="repo-lang">Kotlin · ★ 2</span>
+                        </div>
+                        <p>Google Play Billing integration patterns and subscription handling samples.</p>
                     </a>
                 </div>
+                <p class="github-cta reveal">
+                    <a href="https://github.com/epegasus?tab=repositories" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View all repositories on GitHub</a>
+                </p>
             </div>
         </section>
 
@@ -529,7 +562,7 @@
         </div>
     </div>
 
-    <script src="js/main.js" defer></script>
-    <script src="js/chatbot.js" defer></script>
+    <script src="js/main.js?v=3" defer></script>
+    <script src="js/chatbot.js?v=3" defer></script>
 </body>
 </html>
