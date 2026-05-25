@@ -1,6 +1,9 @@
 # Sohaib Ahmed — Portfolio
 
-Personal portfolio for [itssohaibahmed.github.io](https://itssohaibahmed.github.io), showcasing Senior Android Engineering & Technical Lead experience.
+[![Live Site](https://img.shields.io/badge/Live-itssohaibahmed.github.io-0A66C2?style=for-the-badge)](https://itssohaibahmed.github.io)
+[![Android](https://img.shields.io/badge/Focus-Android%20Engineering-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://developer.android.com)
+
+Personal portfolio for [itssohaibahmed.github.io](https://itssohaibahmed.github.io), showcasing **Senior Android Engineering** and **Technical Lead** experience.
 
 ## Features
 
