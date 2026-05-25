@@ -37,7 +37,12 @@
   navLinks.forEach((link) => {
     link.addEventListener('click', (e) => {
       const href = link.getAttribute('href');
-      if (!href?.startsWith('#')) return;
+      if (!href?.startsWith('#')) {
+        navMenu?.classList.remove('active');
+        navToggle?.classList.remove('active');
+        navToggle?.setAttribute('aria-expanded', 'false');
+        return;
+      }
       e.preventDefault();
       const target = document.querySelector(href);
       if (!target) return;
