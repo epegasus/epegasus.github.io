@@ -1,6 +1,6 @@
 # Sohaib Ahmed — Portfolio
 
-Personal portfolio for [epegasus.github.io](https://epegasus.github.io), showcasing Senior Android Engineering & Technical Lead experience.
+Personal portfolio for [itssohaibahmed.github.io](https://itssohaibahmed.github.io), showcasing Senior Android Engineering & Technical Lead experience.
 
 ## Features
 
@@ -29,7 +29,7 @@ Personal portfolio for [epegasus.github.io](https://epegasus.github.io), showcas
 └── _config.yml
 ```
 
-**Resume:** [View online](https://epegasus.github.io/resume.html) · [Download PDF](https://epegasus.github.io/assets/Sohaib_Ahmed_Senior_Android_Engineer_Resume.pdf)
+**Resume:** [View online](https://itssohaibahmed.github.io/resume.html) · [Download PDF](https://itssohaibahmed.github.io/assets/Sohaib_Ahmed_Senior_Android_Engineer_Resume.pdf)
 
 ## Local development
 
@@ -42,7 +42,7 @@ npx serve .
 
 ## Deploy (GitHub Pages)
 
-Push to the `itssohaibahmed/epegasus.github.io` repository `main` branch. GitHub Pages serves the site at **https://epegasus.github.io**.
+Push to the `itssohaibahmed/itssohaibahmed.github.io` repository `main` branch. GitHub Pages serves the site at **https://itssohaibahmed.github.io**.
 
 ## Contact
 
