@@ -584,6 +584,27 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   border-radius: 6px;
 }
 
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.project-rating {
+  font-weight: 700;
+  color: #b45309;
+}
+
+.project-publisher {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--primary-soft);
+  margin-bottom: 6px;
+}
+
 .project-role {
   font-size: 0.8rem;
   font-weight: 600;

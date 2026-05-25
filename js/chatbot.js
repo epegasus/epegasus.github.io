@@ -27,8 +27,8 @@
       reply: 'Sohaib is a Senior Android Engineer & Technical Lead with 5+ years of experience. He leads Android at HyperSoft Inc. (since Mar 2022), currently as Technical Lead since Jul 2023, mentoring 20+ engineers and owning architecture for apps with 75M+ cumulative installs.'
     },
     {
-      keys: ['install', 'download', 'million', 'play store', 'apps', 'products', 'photo touch', 'translator'],
-      reply: 'Key products: Photo Touch AI Editor (15M+, built from scratch), All Languages Translator (58M+, re-architected to MVVM), All Video Downloader (7.5M+), plus utility apps (TV Remote, Media Recovery, etc.) at 500K+ each. He has shipped 10+ production Play Store apps.'
+      keys: ['install', 'download', 'million', 'play store', 'apps', 'products', 'photo touch', 'translator', 'qibla', 'video', 'remote', 'recovery'],
+      reply: 'Play Store products: Photo Touch AI Editor (10M+, 4.4★), All Languages Translator (50M+ on store, 58M+ lifetime), All Video Downloader & Saver (10M+), Recover Deleted Messages (1M+), Universal TV Remote (1M+), Qibla Compass: Mecca Finder (100K+). Links are on the Products section of the portfolio.'
     },
     {
       keys: ['architecture', 'mvvm', 'mvi', 'clean', 'kotlin', 'compose', 'tech', 'stack', 'skills'],
