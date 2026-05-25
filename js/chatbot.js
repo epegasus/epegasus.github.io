@@ -40,7 +40,7 @@
     },
     {
       keys: ['contact', 'email', 'phone', 'hire', 'reach', 'linkedin'],
-      reply: 'Email: sohaibmughal93@gmail.com · Phone: +92 320 6313745 · LinkedIn: linkedin.com/in/epegasus · GitHub: github.com/epegasus · Location: Islamabad / Rawalpindi, Pakistan.'
+      reply: 'Email: sohaibmughal93@gmail.com · Phone: +92 320 6313745 · LinkedIn: linkedin.com/in/itssohaibahmed · GitHub: github.com/itssohaibahmed · Location: Islamabad / Rawalpindi, Pakistan.'
     },
     {
       keys: ['resume', 'cv', 'download resume', 'pdf'],
@@ -52,7 +52,7 @@
     },
     {
       keys: ['github', 'open source', 'repo', 'project code'],
-      reply: 'GitHub (@epegasus): android-libraries, android-architectures, android-samples, Pegasus-Utils (★5), AnimeHub, compose-catalog-material-3, inappbilling, and more at github.com/epegasus.'
+      reply: 'GitHub (@itssohaibahmed): android-libraries, android-architectures, android-samples, Pegasus-Utils (★5), AnimeHub, compose-catalog-material-3, inappbilling, and more at github.com/itssohaibahmed.'
     },
     {
       keys: ['job', 'role', 'title', 'position'],

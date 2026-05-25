@@ -42,12 +42,12 @@ npx serve .
 
 ## Deploy (GitHub Pages)
 
-Push to the `epegasus/epegasus.github.io` repository `main` branch. GitHub Pages serves the site at **https://epegasus.github.io**.
+Push to the `itssohaibahmed/epegasus.github.io` repository `main` branch. GitHub Pages serves the site at **https://epegasus.github.io**.
 
 ## Contact
 
 - **Email:** sohaibmughal93@gmail.com
-- **LinkedIn:** [linkedin.com/in/epegasus](https://www.linkedin.com/in/epegasus)
-- **GitHub:** [github.com/epegasus](https://github.com/epegasus)
+- **LinkedIn:** [linkedin.com/in/itssohaibahmed](https://www.linkedin.com/in/itssohaibahmed)
+- **GitHub:** [github.com/itssohaibahmed](https://github.com/itssohaibahmed)
 
 © Sohaib Ahmed. All rights reserved.
