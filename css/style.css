@@ -790,7 +790,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 /* Contact */
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 16px;
 }
 
@@ -806,6 +806,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   text-align: left;
   color: inherit;
   width: 100%;
+  min-width: 0;
+  overflow: hidden;
 }
 .contact-card:hover {
   border-color: var(--accent);
@@ -827,9 +829,17 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   color: var(--text-muted);
 }
 .contact-value {
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 600;
   color: var(--primary);
+  line-height: 1.45;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  max-width: 100%;
+}
+
+.contact-social .contact-value {
+  font-size: 0.9rem;
 }
 
 /* Footer */
